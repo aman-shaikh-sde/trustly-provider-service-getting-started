@@ -136,7 +136,7 @@ public class DepositServiceHelper {
 		DataPayload data = DataPayload.builder()
                 .username(merchantUsername)
                 .password(merchantPassword)
-                .notificationUrl(notificationUrl)
+               .notificationUrl(notificationUrl)
                 .endUserId(depositRequest.getEndUserId())
                 .messageId(depositRequest.getTxnReference())
                 .attributes(attributes)
