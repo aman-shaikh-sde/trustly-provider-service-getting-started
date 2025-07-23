@@ -35,6 +35,7 @@ public class GlobalExceptionHandler {
     			ErrorEnum.GENERIC_ERROR.getErrorCode(), 
     			ErrorEnum.GENERIC_ERROR.getErrorMessage());
         log.info("Returning error response: {}", errorResponse);
+         
     	
     	return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST); 
     	// or any suitable status
